@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url("/images/bg-pattern-bottom.svg"), url("/images/bg-pattern-top.svg");
+    background-position: bottom left, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    max-width: 700px;
+    width: 30%;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.space{
+    height: 150px;
+    background: url("/images/bg-pattern-card.svg");
+    margin-bottom: 10px;
+
+}
+
+.container img{
+    margin-top: -60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.container hr{
+    background: hsl(0, 0%, 59%);
+    opacity: 0.2;
+}
+
+.person{
+    margin: 20px 0;
+} 
+
+.person span, .person p, .social p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+
+@media (max-width: 750px){
+    
+    .social {
+        flex-direction: column;
+    }
+
+}
